@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+canvas {
+    border: 0.2em solid white;
+    height: 90vh;
+    
+}
