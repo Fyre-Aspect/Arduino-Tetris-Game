@@ -55,3 +55,4 @@ JavaScript – Game logic and rendering
 
 Arduino (C++) – Reading joystick input and sending serial data
 
+When connecting the game to the Joystick, ensure that you upload the code to Arduino and update the port in the game code files to port X, which is the port you have set. Make sure no other program is reading the serial monitor before connecting the joystick to the game.
