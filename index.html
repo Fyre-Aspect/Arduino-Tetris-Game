@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tetris with Joystick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <canvas id="tetris" width="240" height="400"></canvas>
+  <br />
+  <button id="connect">Connect Joystick</button>
+</body>
+</html>
+    <script>
+        // Joystick connection logic
+        document.getElementById('connect').addEventListener('click', () => {
+        if (navigator.getGamepads) {
+            const gamepads = navigator.getGamepads();
+            if (gamepads[0]) {
+            alert('Joystick connected!');
+            } else {
+            alert('No joystick detected.');
+            }
+        } else {
+            alert('Gamepad API not supported in this browser.');
+        }
+        });
+    </script>
